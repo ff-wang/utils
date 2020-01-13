@@ -11,15 +11,13 @@
     1). compact(array): 返回数组中所有真值元素组成的新数组
     2). chunk(array, size): 将数组拆分成多个 size 长度的区块，每个区块组成小数组,整体组成一个二维数组
   -->
-  <script src="../node_modules/lodash/lodash.js"></script>
-  <!-- <script src="../dist/atguigu-utils.js"></script> -->
-  <script src="../dist/atguigu-utils.min.js"></script>
+  <script src="../dist/utils.min.js"></script>
   <script>
-    console.log(aUtils.compact([0, 1, false, true, '', 'abc'])) // [1, true, 'abc']
-    console.log(aUtils.chunk([1, 2, 3, 4, 5, 6, 7], 3)) // [[1,2,3], [4,5,6],[7]]
-    console.log(aUtils.chunk([1, 2, 3, 4, 5, 6, 7]))// [[1],[2],[3],[4],[5],[6],[7]]
-    console.log(aUtils.chunk([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]
-    console.log(aUtils.chunk2([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]
+    console.log(utils.compact([0, 1, false, true, '', 'abc'])) // [1, true, 'abc']
+    console.log(utils.chunk([1, 2, 3, 4, 5, 6, 7], 3)) // [[1,2,3], [4,5,6],[7]]
+    console.log(utils.chunk([1, 2, 3, 4, 5, 6, 7]))// [[1],[2],[3],[4],[5],[6],[7]]
+    console.log(utils.chunk([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]
+    // console.log(utils.chunk2([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]
   </script>
 </body>
 </html>

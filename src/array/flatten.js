@@ -17,7 +17,7 @@ export function flatten1(array){
   },[])
 }
 export function flatten2(array){
-  let arr = [...array]
+  let arr = [].concat(...array)
   while(some(arr,item=>Array.isArray(item))){
     arr = concat([],...arr)
   }
